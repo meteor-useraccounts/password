@@ -1,0 +1,10 @@
+<template name="uaPwd">
+  <div class="{{module.skinClasses 'container'}} ua-{{module.templateClass}}">
+		<form class="at-pwd-form" action="#" method="POST" novalidate>
+	    {{#each module.fields}}
+	      {{> Template.dynamic template=template}}
+	    {{/each}}
+	    {{> Template.dynamic template=module.btnTemplate}}
+		</form>
+  </div>
+</template>
